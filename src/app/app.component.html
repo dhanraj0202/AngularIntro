@@ -1,5 +1,6 @@
 <div>
   <h1>Hello {{username}} from BridgeLabz</h1>
-  <img [src]="imgUrl" alt="" (click)="launchUrl()"/>
-  <input type="text" [(ngModel)]="username" />
+  <img [src]="imgUrl" alt="Angular Logo" (click)="launchUrl()"/>
+  <input type="text" [(ngModel)]="username" (input)="checkUserName()"/>
+  <span>{{nameError}}</span>
 </div>
